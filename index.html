@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS Files/index.css" type="text/css">
+    <script src="https://kit.fontawesome.com/ea57a11c1b.js" crossorigin="anonymous"></script>
+    <title>Home | TrackHaven</title>
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div class="intro">
+    <h1 class="logoIntro">
+      <span class="splashlogo">Track</span><span class="splashlogo" style="font-weight: 400;">Haven</span>
+    </h1>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar" id="nav">
+    <div class="navbar_container">
+      <div class="navLogo" id="navbar_logo">
+        <button onclick="location.href='./index.html'">
+        <img class="logo" src="./asset/thlogo-clear.png" alt="logo">
+        </button>
+      </div>
+      <!-- hamburger logo -->
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar_menu">
+        <li class="navbar_item">
+          <a href="#homeSection" class="navbar_links" id="home-page">Home</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#serviceSection" class="navbar_links" id="service-page">Services</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#aboutSection" class="navbar_links" id="about-page">About</a>
+        </li>
+        <li class="navbar_button">
+          <a href="./HTML Files/login.html" class="navbtn" id="login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Home -->
+  <div class="section" id="homeSection">
+    <div class="home-bg">
+      <div class="header">
+        <div class="welcome">
+          WELCOME TO <span>TRACK HAVEN</span>
+        </div>
+        <div class="motto">Find Your Desired Home</div>
+        <div class="persuade">Want to list your home?</div>
+        <button class="joinBtn" onclick="location.href='./HTML Files/komisi.html'">JOIN US</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Services -->
+  <div class="section" id="serviceSection">
+  <div class="service-bg">
+    <div class="ourServices">OUR SERVICES</div>
+
+    <!-- BUY -->
+    <div class="buy">
+      <div class="buyrent">BUY</div>
+      <div class="eventsWrapper">
+        <div class="eventsCard" onclick="location.href='./HTML Files/homeDetail.html'">
+          <div class=cardWrapper>
+            <div class="buyPrice">Rp 2,3 M</div>
+            <h1 class="seller">Darwin Reinhart</h1>
+            <div  class="productsDetail">087774023745<br>Jakarta<br>5 KM from You</div>
+          </div>
+        </div>
+        <div class="eventsCard" onclick="location.href='#'">
+          <div class=cardWrapper>
+            <div class="buyPrice">Rp 1,9 M</div>
+            <h1 class="seller">Aldrich Donovan</h1>
+            <div  class="productsDetail">08661273645<br>Tangerang  Selatan<br>16 KM from You</div>
+          </div>
+        </div>
+        <div class="eventsCard" onclick="location.href='#'">
+          <div class=cardWrapper>
+            <div class="buyPrice">Rp 700 Juta</div>
+            <h1 class="seller">Varick Darmadi</h1>
+            <div  class="productsDetail">08712634856<br>Depok<br>130 KM from You</div>
+          </div>
+        </div>
+      </div>
+    <a href="./HTML Files/buyMore.html" class="viewMore">view more</a>
+    </div>
+
+    <!-- RENT -->
+    <div class="rent">
+      <div class="buyrent">RENT</div>
+      <div class="eventsWrapper">
+        <div class="eventsCard" onclick="location.href='./HTML Files/rentDetail.html'">
+          <div class=cardWrapper>
+            <div class="rentDetail">monthly price</div>
+            <div class="rentPrice">Rp 1,2 Juta</div>
+            <h1 class="seller">Benedictus Darwin</h1>
+            <div    class="productsDetail">08712634856<br>Depok<br>130 KM from You</div>
+          </div>
+        </div>
+        <div class="eventsCard" onclick="location.href='#'">
+          <div class=cardWrapper>
+            <div class="rentDetail">monthly price</div>
+            <div class="rentPrice">Rp 3,4 Juta</div>
+            <h1 class="seller">Reinhart Darmadi</h1>
+            <div  class="productsDetail">08983764652<br>Kalimantan<br>70 KM from You</div>
+          </div>x
+        </div>
+        <div class="eventsCard" onclick="location.href='#'">
+          <div class=cardWrapper>
+            <div class="rentDetail">monthly price</div>
+            <div class="rentPrice">Rp 2,6 Juta</div>
+            <h1 class="seller">Wiradharma</h1>
+            <div  class="productsDetail">081727348242<br>Tangerang<br>9 KM from You</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="./HTML Files/rentMore.html" class="viewMore">view more</a>
+  </div>
+  </div>
+
+  <!-- About Us -->
+  <div class="about" id="aboutSection">
+    <h1 class="aboutUs">ABOUT US</h1>
+    <img class="icon" src="./asset/thlogo-clear.png" alt="logo">
+    <div class="whitespace"></div>
+    <div class="container">
+      <div class="aboutDetails">Welcome to TRACKHAVEN, your ultimate destination for all your property needs. Whether you're looking to rent a cozy apartment or purchase your dream home, TRACKHAVEN offers a seamless experience that connects you with a wide range of properties. Our user-friendly interface and comprehensive search options make it effortless to find the perfect place that suits your preferences and budget.
+      </div>
+      <div class="aboutDetails">At TRACKHAVEN, we prioritize your satisfaction and strive to provide exceptional service every step of the way. Our dedicated team of professionals is committed to helping you navigate the world of real estate with ease. With a vast database of listings, detailed property information, and powerful search filters, TRACKHAVEN ensures you can make informed decisions and find your ideal property quickly. Trust TRACKHAVEN to simplify your property journey and turn your dreams into a reality.
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <section class="columns">
+      <div class="col">
+        <img class="logoBottom" src="./asset/thlogo-clear.png" alt="logo">
+      </div>
+      <div class="col">
+        <div class="colContainer">
+          <i class="fa-sharp fa-regular fa-envelope fa-lg" style="color: #f1f1f1;"></i>
+          <span>Track.Haven@gmail.com</span>
+          <div class="whitespace"></div>
+          <i class="fa-brands fa-whatsapp fa-xl" style="color: #f1f1f1;"></i>
+          <span>+62 896059090</span>
+        </div>
+      </div>
+    </section>
+   
+    <span class="copyright">© Copyright 2023 TrackHaven. </span>
+  </div>
+
+  <script src="./JS Files/mobileview.js"></script>
+  <script src="./JS Files/splashscreen-script.js"></script>
+</body>
+</html>

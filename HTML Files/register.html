@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS Files/register.css" type="text/css">
+    <script src="https://kit.fontawesome.com/ea57a11c1b.js" crossorigin="anonymous"></script>
+    <title>Register | TrackHaven</title>
+</head>
+<body>
+<div class="bgimage">
+  <button class="backBtn" onclick="history.back()">
+    <i class="fa-solid fa-arrow-left-long fa-3x" style="color: #f1f1f1;"></i>
+  </button>
+  <div class="registerBox">
+    <div class="container">
+        <form class="form" method="get" action="">
+        <h1 class="Register">Register Your Account</h1>
+        <div class="form-row">
+            <label for="nameInput" class="title">Full Name</label>
+            <input type="text" id="nameInput" class="form-Input" placeholder="John Doe">
+        </div>
+        <div class="form-row">
+            <label for="phoneInput" class="title">Phone Number</label>
+            <input type="text" id="phoneInput" class="form-Input" placeholder="0000-0000-0000">
+        </div>
+        <div class="form-row">
+            <label for="emailInput" class="title">E-mail</label>
+            <input type="email" id="emailInput" class="form-Input" placeholder="example@gmail.com">
+        </div>
+        <div class="form-row">
+            <label for="pwInput" class="title">Password</label>
+            <input type="password" id="pwInput" class="form-Input" placeholder="Password">
+        </div>
+        <div class="form-row">
+            <label for="pwInput2" class="title">Confirm Password</label>
+            <input type="password" id="pwInput2" class="form-Input" placeholder="Confirm Password">
+        </div>
+        <div class="form-row">
+            <label for="genderInput" class="title">Gender</label>
+            <div class="genderList">
+                <input type="radio" name="genderInput" id="male" value="male">
+                <label for="male" class="gender-label">Male</label>
+                <input type="radio" name="genderInput" id="female" value="female">
+                <label for="female" class="gender-label">Female</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <label for="cityOptions" class="title">City</label>
+            <div class="cityList">
+            <select class="selectCity" type="text" id="cityOptions">
+                <option id="cityNone"></option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Tangerang">Tangerang</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Bekasi">Bekasi</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Other">Other..</option>
+            </select>
+        </div>
+        <button type="button" class="submit-btn" onclick="validate()">
+            <a href="../index.html">
+                SUBMIT
+            </a>
+        </button>
+        </form>
+    </div>
+  </div>
+  <div class="copyright">© Copyright 2023 TrackHaven.</div>
+</div>
+<script src="../JS Files/register.js"></script>
+</body>
+</html>

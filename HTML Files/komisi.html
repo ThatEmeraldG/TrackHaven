@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS Files/komisi.css" type="text/css">
+    <link rel="stylesheet" href="../CSS Files/index.css" type="text/css">
+    <link rel="stylesheet" href="../CSS Files/transition.css" type="text/css">
+    <script src="https://kit.fontawesome.com/ea57a11c1b.js" crossorigin="anonymous"></script>
+    <title>List your Home | TrackHaven</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar_container">
+      <div class="navLogo">
+        <button onclick="location.href='../index.html'">
+        <img class="logo" src="../asset/thlogo-clear.png" alt="logo">
+        </button>
+      </div>
+      <!-- hamburger logo -->
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar_menu">
+        <li class="navbar_item">
+          <a href="../index.html" class="navbar_links" id="home-page">Home</a>
+        </li>
+        <li class="navbar_item">
+          <a href="#policy" class="navbar_links" id="service-page">Policy</a>
+        </li>
+        <li class="navbar_button">
+          <a href="../HTML Files/login.html" class="navbtn" id="login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Form -->
+  <div class="komisi-bg">
+    <button class="backBtn" onclick="history.back()">
+        <i class="fa-solid fa-arrow-left-long fa-3x" style="color: #F5F5DC;"></i>
+    </button>
+     <div class="commisionBox">
+        <div class="container">
+            <form class="form" method="get" action="" onsubmit="return(validate())">
+            <div class="imgContainer">
+                <div class="icon-kom"></div>
+                <h1 class="Commision">FILL YOUR <span>PROPERTY DATA</span></h1>
+            </div>
+            <div class="form-row">
+                <label for="nameInput" class="title">Full Name:</label>
+                <br>
+                <input type="text" id="nameInput" class="form-Input" placeholder="Input your name (should be the same as your login name!)">
+            </div>
+            <div class="form-row">
+                <label for="phoneInput" class="title">Phone Number:</label>
+                <br>
+                <input type="text" id="phoneInput" class="form-Input" placeholder="Input your phone that can be contacted!">
+            </div>
+            <div class="form-row">
+                <label for="emailInput" class="title">E-mail:</label>
+                <br>
+                <input type="email" id="emailInput" class="form-Input" placeholder="Input your email address here!">
+            </div>
+            <div class="form-row">
+                <label for="propertyNameInput" class="title">Property Name:</label>
+                <br>
+                <input type="email" id="propertyNameInput" class="form-Input" placeholder="People will see your property name first!">
+            </div>
+            <div class="form-row">
+                <label for="priceInput" class="title">Price:</label>
+                <br>
+                <input type="email" id="priceInput" class="form-Input" placeholder="Input the price of your property!">
+            </div>
+                <div class="form-row">
+                  <label for="statusInput" class="title">Status:</label>
+                  <br>
+                  <div class="statusList">
+                      <input type="radio" name="statusInput" id="buy" value="buy">
+                      <label for="buyOnly" class="title">Buy Only</label>
+                      <input type="radio" name="statusInput" id="rent" value="rent">
+                      <label for="rentOnly" class="title">Rent Only</label>
+                      <input type="radio" name="statusInput" id="both" value="both">
+                      <label for="both" class="title">Both</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="kfInput" class="title">Key Features:</label>
+                <br>
+                <input type="text" id="kfInput" class="form-Input" placeholder="Input the key features of your properties!">
+            </div>
+            <div class="form-row">
+                <label for="paInput" class="title">Property Amenities:</label>
+                <br>
+                <input type="text" id="paInput" class="form-Input" placeholder="Input the amenities that your property has to offer!">
+            </div>
+            <div class="form-row">
+                <label for="addressInput" class="title">Address:</label>
+                <br>
+                <input type="text" id="addressInput" class="form-Input" placeholder="Input your property’s full address!">
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="moreContactOptions" class="title" style="font-size: 1.5em; font-weight: 700">MORE WAYS FOR THE BUYER TO CONTACT YOU!</label>
+                <br>
+            </div>
+            <div class="form-row">
+                <label for="whatsappInput" class="title">WhatsApp:</label>
+                <input type="text" id="whatsappInput" class="form-Input">
+            </div>
+            <div class="form-row">
+                <label for="facebookInput" class="title">Facebook:</label>
+                <input type="text" id="facebookInput" class="form-Input">
+            </div>
+            <div class="form-row">
+                <label for="instagramInput" class="title">Instagram:</label>
+                <input type="text" id="instagramInput" class="form-Input">
+            </div>
+            <button type="button" class="submit-btn">
+              <a href="../index.html">
+                  SUBMIT
+              </a>
+          </button>
+          <h4 class="alert-submit">By submitting, you are agreeing on the policy terms and condition from this app </h4>
+        </div>
+    </div>
+    </form>
+    </div>
+  </div>
+
+  <script src="../JS Files/register.js"></script>
+
+  <!-- Policy -->
+  <div class="about" id="policy" style="background: #0C1922" >
+    <div class="policy">POLICY</div>
+    <p class="aboutDetails" style="color: #FFFFFF; font-size: 1.25rem;">- Our application fee is set at 2.5% of the total transaction amount and applies to both property rentals and sales facilitated through our application. The purpose of this fee is to cover administrative costs, support platform maintenance, and provide quality services to our users.
+    <br><br>- The application fee is non-refundable once the application has been submitted and processed, regardless of the outcome of the rental or sale. Refunds will only be provided in exceptional cases where there is a proven technical error on our part resulting in an incorrect fee calculation or double charging.
+    <br><br>- This policy is subject to change at our discretion, and we will notify users of any updates or modifications made to the application fee policy through appropriate channels, such as website notifications, email communication, or within the application itself.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <section class="columns">
+      <div class="col">
+        <img class="logoBottom" src="../asset/thlogo-clear.png" alt="logo">
+      </div>
+      <div class="col">
+        <div class="colContainer">
+          <i class="fa-sharp fa-regular fa-envelope fa-lg" style="color: #f1f1f1;"></i>
+          <span>Track.Haven@gmail.com</span>
+          <div class="whitespace"></div>
+          <i class="fa-brands fa-whatsapp fa-xl" style="color: #f1f1f1;"></i>
+          <span>+62 896059090</span>
+        </div>
+      </div>
+    </section>
+   
+    <span class="copyright">© Copyright 2023 TrackHaven. </span>
+  </div>
+
+  <script src="../JS Files/mobileview.js"></script>
+</body>
+</html>

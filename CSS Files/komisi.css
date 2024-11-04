@@ -1,0 +1,164 @@
+body, html{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #789;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #456;
+}
+
+.backBtn{
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.commisionBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;  
+    padding: 1.5rem;
+    width: 750px;
+    height: 1350px;
+    text-align: center;
+    background: #0C1922;  
+    border-radius: 25px;
+}
+
+.Commision{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-right: 1rem;
+    color: #F5F5DC;
+    text-align: right;
+}
+
+.form-row{
+    padding-left: 0.5rem;
+    text-align: left;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #F5F5DC;
+    text-align: left;
+}
+
+.policy{
+    background: transparent;
+    position: relative;
+    text-align: left;
+    font-size: 4rem;
+    color: #F5F5DC;
+    font-weight: 900;
+}
+.policy:before, .policy:after {
+    background-color: #F5F5DC;
+    content: "";
+    display: inline-block;
+    height: 2.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.policy:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.policy:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.form-Input{
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    width: 42.5rem;
+}
+.komisi-bg {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url('../asset/homecommission-pict.png');
+    height: 225vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.submit-btn{
+    margin-top: 1.25rem;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    background: #C6AB7C;
+    color: white;
+    border: solid 2px transparent;
+    border-radius: 1.25rem;
+}
+.submit-btn a{
+    text-decoration: none;
+    color: #213644;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    text-decoration: none;
+    border: solid 2px #F5F5DC;
+    background: #213644;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: 0.4s ease-in-out all;
+}
+.submit-btn:hover a{
+    color: #C6AB7C;
+}
+
+.alert-submit {
+    text-align: center;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-top: 0.1rem auto;
+}
+.icon-kom {
+    width: 45%;
+    background: url('../asset/KomisiRumah.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.imgContainer{
+    display: flex;
+    padding-bottom: 2rem;
+}

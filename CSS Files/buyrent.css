@@ -1,0 +1,44 @@
+em{
+    font-style: normal;
+    font-weight: 400;
+}
+
+.title{
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 900;
+    text-align: center;
+    margin: 3rem auto;
+    color: #F5F5DC;
+}
+
+.buyrentContainer{
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.7);
+    max-width: 80%;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.bg-buy{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgb(0,0,0,0.75)), url('../asset/login-bg.png');
+    background-color: rgba(0, 0, 0, 0.64);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.bg-rent{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgb(0,0,0,0.75)), url('../asset/homecommission-pict.png');
+    background-color: rgba(0, 0, 0, 0.64);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}

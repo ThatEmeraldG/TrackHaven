@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS Files/login.css" type="text/css">
+    <script src="https://kit.fontawesome.com/ea57a11c1b.js" crossorigin="anonymous"></script>
+    <title>Login | TrackHaven</title>
+</head>
+<body>
+<div class="bgimage">
+    <button class="backBtn" onclick="history.back()">
+        <i class="fa-solid fa-arrow-left-long fa-3x" style="color: #f1f1f1;"></i>
+    </button>
+    <header class="loginBox">
+    <div class="container">
+        <form class="form" method="get" action="">
+        <h1 class="Login">Login to Your Account</h1>
+        <div class="form-row">
+            <h2 class="email-Title">Email</h2>
+            <input type="email" id="emailInput" class="form-Input" placeholder="example@gmail.com">
+        </div>
+        <div class="form-row">
+            <h2 class="password">Password</h2>
+            <input type="password" id="pwInput" class="form-Input" placeholder="Password">
+        </div>
+        <button type="button" class="submit-btn" onclick="validate()">
+            <a href="../index.html">
+                LOGIN
+            </a>
+        </button>
+        </form>
+        <div class="register">Don't have an account yet? 
+            <a href="../HTML Files/register.html">Register</a> here
+        </div>  
+    </div>
+    </header>
+    <div class="copyright">© Copyright 2023 TrackHaven.</div>
+</div>
+<script src="../JS Files/login.js"></script>
+</body>
+</html>

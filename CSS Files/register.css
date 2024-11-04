@@ -1,0 +1,168 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins';
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #789;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #456;
+}
+input{
+    font-size: medium;
+}
+.backBtn{
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+.registerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;   
+    padding: 2rem;
+    width: 505px;
+    height: 750px;
+    text-align: center;
+    background: linear-gradient(180deg, #F1DEBC 0.01%, #EAC179 132.18%);
+    border-radius: 25px;
+}
+.Register{
+    margin-top: 0;
+    font-weight: 700;
+    color: #213644;
+}
+.title{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: #213644;
+    font-size: larger;
+    font-weight: bolder;
+}
+.form-row{
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    margin-bottom: 1rem;
+}
+.form-Input{
+    box-sizing: border-box;
+    padding: .8rem .5rem;
+    border: 0;
+    border-bottom: 1px solid #213644;
+    border-radius: 5px;
+    width: 100%;
+    opacity: 60%;
+}
+.form-Input::placeholder{
+    color: #213644;
+    font-size: medium;
+}
+.form-Input:focus{
+    outline: none;
+    border-bottom: 3px solid #102030;
+}
+.genderList{
+    color: black;
+    padding-top: 10px;
+    display: flex;
+    align-items: left;
+    column-gap: 0.25rem;
+}
+.genderList input{
+    appearance: none;
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    box-shadow: 0px 0px 4px #102030;
+    border: .1rem solid #EAC179;
+    background-color: #213644;
+    transition: 0.2s all linear;
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.genderList input:checked{
+    border: .25rem solid #213644;
+    background-color: #EAC179;
+}
+.gender-label{
+    padding-right: 1.5rem;
+}
+.cityList{
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.selectCity{
+    border: solid 2px #213644;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+}
+#cityNone{
+    display: none;
+}
+.submit-btn{
+    margin-top: 1rem;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    background: #213644;
+    color: white;
+    border: solid 2px transparent;
+    border-radius: 1.25rem;
+}
+.submit-btn a{
+    text-decoration: none;
+    color: #F5F5DC;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    text-decoration: none;
+    border: solid 2px #F5F5DC;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: 0.3s ease-in-out all;
+}
+.submit-btn:hover a{
+    color: #C6AB7C;
+}
+.copyright{
+    color: #F5F5DC;
+    text-align: center;
+    font-size: clamp(0.75rem, 1rem, 1.5rem);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgimage{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('../asset/register-bg.png');
+    height: 125vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
